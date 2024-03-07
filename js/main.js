@@ -35,7 +35,7 @@ function translit(str) {
     щ: "shch",
     ъ: "",
     ы: "y",
-    ь: "",
+    ь: "'",
     э: "e",
     ю: "u",
     я: "ya",
@@ -74,12 +74,12 @@ function addToList(inputValue) {
       ? `${translitValue.slice(0, 10)}...`
       : translitValue;
   newLiTranslitElement.setAttribute("aria-label", `${translitValue}`);
-  newLiTranslitElement.append(deleteItemButton);
   translitList.append(newLiTranslitElement);
 
   // кнопка удаления для элемента
   const deleteItemButton = document.createElement("button");
   deleteItemButton.classList.add("delete-item");
+  newLiTranslitElement.append(deleteItemButton);
   deleteItemButton.addEventListener("click", () => {
     newLiElement.remove();
     newLiTranslitElement.remove();
