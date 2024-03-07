@@ -7,3 +7,6 @@ The project implements transliteration of the Cyrillic alphabet into the Latin a
 1. HTML
 2. CSS
 3. JavaScript
+
+## Link
+### https://igafar.github.io/translit/
